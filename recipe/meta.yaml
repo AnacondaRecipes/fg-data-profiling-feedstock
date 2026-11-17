@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/f/fg-data-profiling/fg_data_profiling-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace("-", "_") }}-{{ version }}.tar.gz
   sha256: 2836994c6010408d30d1dc3cce082e65c4950e14aeb5fb3fad6544ff085734ad
 
 build:
