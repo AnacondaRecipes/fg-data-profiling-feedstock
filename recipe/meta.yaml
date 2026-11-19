@@ -2,7 +2,7 @@
 {% set version = "4.20.0" %}
 
 package:
-  name: fg-data-profiling
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -10,7 +10,7 @@ source:
   sha256: 2836994c6010408d30d1dc3cce082e65c4950e14aeb5fb3fad6544ff085734ad
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - data_profiling = data_profiling.controller.console:main
